@@ -4,4 +4,4 @@
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/ValeriaMordyashova/comp_grahaa)
 
 ![Python](https://img.shields.io/badge/Python-3.9-purple)
-![GIF](https://raw.githubusercontent.com/ValeriaMordyashova/Comp_grahaa/master/Лабораторная-работа-№1.gif))
+![GIF](https://raw.githubusercontent.com/ValeriaMordyashova/Comp_grahaa/master/Лабораторная-работа-№1.gif)
