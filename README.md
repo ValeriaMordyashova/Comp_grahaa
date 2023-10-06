@@ -4,4 +4,11 @@
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/ValeriaMordyashova/comp_grahaa)
 
 ![Python](https://img.shields.io/badge/Python-3.9-purple)
-![GIF](https://github.com/ValeriaMordyashova/comp_grahaa/Лабораторная-работа-№1.gif(%CB%E0%E1%EE%F0%E0%F2%EE%F0%ED%E0%FF-%F0%E0%E1%EE%F2%E0-%B91.gif))
+# Описание программы 
+Требуется составить программу, которая выводит на экран треугольник с заданными координатами вершин, заполненный заданным образцом. Затем при каждом нажатии клавиш управления курсором осуществляла бы перемещение треугольника на экране с заданным шагом в соответствующем направлении. 
+# Реализация
+![GIF](https://raw.githubusercontent.com/ValeriaMordyashova/Comp_grahaa/master/Лабораторная-работа-№1.gif)
+# Язык и среда обработки
+| Язык | Интерпретатор/Версия | Среда разработки | 
+| ------ | ------ | ------ |
+| Python | Python /w64 3.9 | PyCharm 2023.2.1 |
