@@ -32,11 +32,18 @@ def move_up(event):
 def move_down(event):
     w.move(triangle, 0, 3)
 
+
+def exit_program(event):
+    if event.keysym == "Escape":
+        window.quit()
+
 # Привязываем клавиши к функциям
 window.bind("<Left>", move_left)
 window.bind("<Right>", move_right)
 window.bind("<Up>", move_up)
 window.bind("<Down>", move_down)
+window.bind("<Escape>", exit_program)
+
 
 window.mainloop()
 
