@@ -9,6 +9,6 @@
 # Реализация
 ![GIF](https://raw.githubusercontent.com/ValeriaMordyashova/Comp_grahaa/master/Лабораторная-работа-№1.gif)
 # Язык и среда обработки
-| Язык | Интерпретатор/Версия | Среда разработки | 
-| ------ | ------ | ------ |
-| Python | Python /w64 3.9 | PyCharm 2023.2.1 |
+| Язык | Среда разработки | 
+| ------ |------ |
+| Python | PyCharm 2023.2.1 |
