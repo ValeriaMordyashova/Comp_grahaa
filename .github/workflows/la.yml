@@ -27,8 +27,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
+#      - name: Set up Python
+#        uses: actions/setup-python@v2
 
       - name: Check Test
         run: python test/test1.py
