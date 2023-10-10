@@ -1,4 +1,4 @@
-# Comp_grahaa
+# Компьютерная графика. Лабораторная №1
 Это простое графическое приложение на Python, использующее библиотеку Tkinter для создания бегающего треугольника. Приложение позволяет двигаться треугольнику с помощью клавиш.
 
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/ValeriaMordyashova/comp_grahaa)
@@ -9,6 +9,6 @@
 # Реализация
 ![GIF](https://raw.githubusercontent.com/ValeriaMordyashova/Comp_grahaa/master/Лабораторная-работа-№1.gif)
 # Язык и среда обработки
-| Язык | Интерпретатор/Версия | Среда разработки | 
-| ------ | ------ | ------ |
-| Python | Python /w64 3.9 | PyCharm 2023.2.1 |
+| Язык | Среда разработки | 
+| ------ |------ |
+| Python | PyCharm 2023.2.1 |
