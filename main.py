@@ -1,49 +1,77 @@
-from tkinter import *
-from tkinter import Tk
+import pygame
+import sys
+import math
 
-window = Tk()
-window.title("Лабораторная работа №1")
-window.geometry('500x500')
-a=10
-b=10
-c=20
-canvas_width = 150
-canvas_height =150
-python_green = "#476042" # ID цвета обводки.
+# Инициализация Pygame
+pygame.init()
 
-w = Canvas(window,
-           width=500,
-           height=500)
-w.pack()
+# Определение цветов
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
 
-points = [a, b, canvas_width, canvas_height / 2, c, canvas_height]
-triangle = w.create_polygon(points, outline=python_green, fill='green', width=3)
+# Угол наклона плоскости в градусах
+slope_angle = 30
 
-# Функции для изменения позиции треугольника
-def move_left(event):
-    w.move(triangle, -3, 0)
+# Преобразование угла наклона в радианы
+slope_angle_rad = math.radians(slope_angle)
 
-def move_right(event):
-    w.move(triangle, 3, 0)
+# Длина наклонной линии
+line_length = 300
 
-def move_up(event):
-    w.move(triangle, 0, -3)
+# Начальные координаты цилиндра в верхнем правом углу
+start_x = 800
+start_y = 100
 
-def move_down(event):
-    w.move(triangle, 0, 3)
+# Радиус цилиндра
+radius = 20
 
+# Создание окна
+screen_width = 800
+screen_height = 600
+screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption("Скатывание цилиндра")
 
-def exit_program(event):
-    if event.keysym == "Escape":
-        window.quit()
+# Цикл обработки событий
+clock = pygame.time.Clock()
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+            running = False
 
-# Привязываем клавиши к функциям
-window.bind("<Left>", move_left)
-window.bind("<Right>", move_right)
-window.bind("<Up>", move_up)
-window.bind("<Down>", move_down)
-window.bind("<Escape>", exit_program)
+    # Очистка экрана
+    screen.fill(WHITE)
 
+    # Вычисление новых координат цилиндра после скатывания
+    new_x = start_x - radius * math.cos(slope_angle_rad)
+    new_y = start_y + radius * math.sin(slope_angle_rad)
 
-window.mainloop()
+    # Отрисовка цилиндра
+    pygame.draw.circle(screen, RED, (int(start_x), int(start_y)), radius)
 
+    # Отрисовка наклонной линии
+    pygame.draw.line(screen, BLACK, (800, 120), (3, 580), 2)
+
+    # Обновление экрана
+    pygame.display.flip()
+
+    # Задержка для симуляции времени
+    pygame.time.delay(50)
+
+    # Обновление начальных координат
+    start_x = new_x
+    start_y = new_y
+
+    # Проверка достижения левой стороной цилиндра
+    if start_x - radius <= 0:
+        running = False
+
+    # Ограничение частоты обновления экрана
+    clock.tick(30)
+
+# Завершение программы
+pygame.quit()
+sys.exit()
