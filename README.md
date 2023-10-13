@@ -7,7 +7,7 @@
 # Описание программы 
 Требуется составить программу скатывающего цилиндра по наклонной плоскости. Заданы угол наклона плоскости и начальное положение цилиндра. Демонстрация до момента достижения левой плоскости.
 
-![GIF](https://raw.githubusercontent.com/ValeriaMordyashova/Comp_grahaa/master/Лабораторная-работа-№1.gif)
+![GIF](https://raw.githubusercontent.com/ValeriaMordyashova/Comp_grahaa/lab2/picture/Лаб_2.gif)
 # Язык и среда обработки
 | Язык | Среда разработки | 
 | ------ |------ |
