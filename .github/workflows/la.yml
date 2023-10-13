@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Set up Python
         uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
 
   test:
 
@@ -29,6 +31,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Set up Python
         uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
 
       - name: Check Test
         run: python test/test1.py
