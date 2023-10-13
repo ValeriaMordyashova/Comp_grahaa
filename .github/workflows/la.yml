@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-#      - name: Set up Python
+#      - name: Set up Python 3.11
 #        uses: actions/setup-python@v2
 
   test:
@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-#      - name: Set up Python
+#      - name: Set up Python 3.11
 #        uses: actions/setup-python@v2
 
       - name: Check Test
